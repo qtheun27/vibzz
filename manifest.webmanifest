@@ -3,7 +3,7 @@
   "short_name": "Vibzz",
   "description": "Le réseau social de l'équipe du magasin",
   "lang": "fr",
-  "start_url": "./",
+  "start_url": "./?app=1",
   "scope": "./",
   "display": "browser",
   "background_color": "#0B6FD8",
