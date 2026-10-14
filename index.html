@@ -23,7 +23,6 @@
 <meta name="twitter:image" content="https://qtheun27.github.io/vibzz/og.png">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="manifest" href="manifest.webmanifest">
 <style>
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:linear-gradient(135deg,#0B6FD8,#1A8BEA 55%,#7CC97A);color:#121826;padding:20px}
@@ -53,18 +52,9 @@ small{display:block;margin-top:14px;color:#8a93a5}
 <p>Le réseau social de l'équipe du magasin : photos d'évènements, anniversaires, bravos.</p>
 <a class="open" href="https://script.google.com/a/macros/decathlon.com/s/AKfycbxc_7rp2ozzXEi5t4-d14mc-pfjpkyazGxqjPnTJV_Dh5YxmOhPi7r3b4fB1Ko9Kqb0yw/exec">Ouvrir Vibzz</a>
 <p style="font-size:13px">Connexion avec ton compte de l'entreprise.</p>
-<div class="install" id="ios"><b>📲 Installer l'icône Vibzz</b>Dans Safari, touche <b style="display:inline">Partager ⬆️</b> puis <b style="display:inline">« Sur l'écran d'accueil »</b>.</div>
-<div class="install hide" id="android"><b>📲 Installer l'icône Vibzz</b>Menu <b style="display:inline">⋮</b> puis <b style="display:inline">« Ajouter à l'écran d'accueil »</b>.<button class="inst hide" id="instBtn" type="button">Installer Vibzz</button></div>
+<div class="install"><b>📲 Avoir Vibzz sur l'écran d'accueil</b>Touche « Ouvrir Vibzz », puis dans Safari : <b style="display:inline">Partager ⬆️</b> → <b style="display:inline">« Sur l'écran d'accueil »</b>. Sur Android : menu ⋮ → « Ajouter à l'écran d'accueil ».</div>
 <small>Réservé à l'équipe · accès protégé par le compte de l'entreprise</small>
 </main>
-<script>
-(function () {
-  var ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  if (!ios) { document.getElementById('ios').className = 'install hide'; document.getElementById('android').className = 'install'; }
-  var deferred = null, btn = document.getElementById('instBtn');
-  window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferred = e; btn.className = 'inst'; });
-  btn.addEventListener('click', function () { if (deferred) { deferred.prompt(); deferred = null; btn.className = 'inst hide'; } });
-})();
-</script>
+
 </body>
 </html>
